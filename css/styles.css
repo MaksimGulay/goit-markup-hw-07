@@ -14,6 +14,8 @@ body {
     background-color: #FFFFFF;
     color: #2E2F42;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -39,27 +41,27 @@ img {
 }
 
 .container {
-    /* max-width: 1158px; */
     width: 100%;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
+    border: 1px solid red;
 }
 
-@media screen and (min-width: 480px){
-    .container{
-        max-width: 412px;
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 428px;
     }
 }
 
-@media screen and (min-width: 768px){
-    .container{
+@media screen and (min-width: 768px) {
+    .container {
         max-width: 768px;
     }
 }
 
-@media screen and (min-width: 1200px){
-    .container{
+@media screen and (min-width: 1200px) {
+    .container {
         max-width: 1160px;
     }
 }
@@ -401,7 +403,7 @@ img {
 }
 
 .team-item {
-    
+
     width: 100%;
     max-width: 264px;
     background: #FFFFFF;
@@ -469,7 +471,6 @@ img {
 
 .customers-list {
     width: 100%;
-    min-width: 396px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -480,7 +481,8 @@ img {
 }
 
 .customers-item {
-    width: 190px;
+    max-width: 190px;
+    min-width: 168px;
     height: 88px;
 }
 
@@ -538,6 +540,9 @@ img {
     text-decoration: none;
     padding-bottom: 16px;
     outline: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-subtitle {
@@ -546,14 +551,20 @@ img {
     letter-spacing: 0.02em;
     color: #E7E9FC;
     width: 264px;
-    margin: 16px 0 0;
+    margin-top: 0px;
+    margin-bottom: 72px;
     display: flex;
 }
 
 .footer-section {
     background: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
+
+.general-footer-content {
+    display: block;
+}
+
 
 .footer-social-list {
     display: flex;
@@ -602,24 +613,33 @@ img {
     color: #FFFFFF;
     margin: 0% auto;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-description {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 72px;
 }
 
 .footer-descript {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .footer-social {
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 
 .footer-form {
     position: relative;
     height: 80px;
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .footer-form-field {
@@ -651,6 +671,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
 
 .foorter-input::placeholder {
@@ -662,8 +684,7 @@ img {
     display: flex;
     width: 165px;
     height: 40px;
-
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     gap: 16px;
