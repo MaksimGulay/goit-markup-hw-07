@@ -3,6 +3,73 @@
         max-width: 1160px;
     }
 
+    /* --------------header---------------- */
+
+    .header-adress {
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-list {
+        margin-left: 0;
+    }
+
+    .header-contact {
+        padding: 24px 0;
+        display: block;
+    }
+
+    .main-header-logo {
+        margin-right: 28px;
+    }
+
+    .header-navigation {
+        display: flex;
+    }
+
+    /* -----------------hero-section----------- */
+
+    .hero-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    /* -------------Section about----------- */
+
+    .icon-about {
+        display: flex;
+    }
+
+    .icon-about-item {
+        display: block;
+    }
+
+    .about-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .about-item {
+        width: calc((100%-72px) / 4)
+    }
+
+    .about-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    /* -------------work-section --------------------*/
+
+    .worck-section {
+        padding-bottom: 120px;
+        display: block
+    }
+
+    /* -------------team-section--------------- */
+
     .team-section {
         padding: 120px 0;
     }
@@ -14,6 +81,9 @@
     .team-list {
         gap: 24px;
     }
+
+
+    /*------------------------ customers-section -----------------*/
 
     .customers-section {
         padding-top: 130px;

@@ -155,20 +155,17 @@ img {
 
 .header-navigation {
     display: flex;
+    /* margin-left: auto; */
 }
 
 .header-list {
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
 .adress {
+    display: none;
     margin-left: auto;
-}
-
-.header-adress {
-    gap: 40px;
-    display: flex;
 }
 
 .header-contact {
@@ -194,9 +191,9 @@ img {
 /* --------------hero-section---------- */
 .hero-section {
     background-color: #2E2F42;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0% auto;
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
@@ -206,9 +203,9 @@ img {
 }
 
 .hero-title {
-    width: 496px;
+    max-width: 320px;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
@@ -287,36 +284,47 @@ img {
 
 .about-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
 }
 
 .about-item {
-    width: calc((100%-72px) / 4)
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about-title {
-    font-weight: 500;
-    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    /* font-weight: 500;
+    font-size: 20px; */
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     padding: 0px 0px 8px 0px;
-    width: 264px;
+    min-width: 264px;
     margin: 0px 0px;
 }
 
 .about-subtitle {
+    display: flex;
+    text-align: center;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-subtitle-color);
     margin: 0px;
-    width: 264px;
-    height: 72px;
+    min-width: 264px;
+    /* height: 72px; */
 }
 
 .icon-about {
-    display: flex;
+    display: none;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 264px;
@@ -327,6 +335,7 @@ img {
 }
 
 .icon-about-item {
+    display: none;
     width: 64px;
     height: 64px;
 }
@@ -334,7 +343,7 @@ img {
 /* ------------Work section------------- */
 
 .worck-section {
-    padding-bottom: 120px;
+    display: none;
 }
 
 
@@ -635,7 +644,7 @@ img {
 .footer-form {
     position: relative;
     height: 80px;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -647,8 +656,15 @@ img {
     flex-direction: column;
 }
 
+.footer-form-field {
+    width: 100%;
+}
+
+
 .footer-input {
-    width: 264px;
+
+    width: 100%;
+    max-width: 398px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

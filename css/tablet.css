@@ -3,6 +3,71 @@
         max-width: 768px;
     }
 
+    /* --------------- header ---------------*/
+
+    .main-header-logo {
+        margin: auto;
+        /* margin-right: 96px; */
+    }
+
+    .header-list {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .adress {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-adress {
+        gap: 4px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-contact {
+        padding: 30px 0;
+        display: contents;
+    }
+
+
+    /*-------------- hero-title------------- */
+
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+    }
+
+    .hero-section {
+        padding-top: 112px;
+        padding-bottom: 108px;
+    }
+
+    /* -------------Section about----------- */
+
+    .about-list {
+        column-gap: 24px;
+    }
+
+    .about-item {
+        width: calc((100%-24px) / 2);
+        justify-content: normal;
+        max-width: 354px;
+    }
+
+    .about-title {
+        text-align: start;
+    }
+
+    .about-subtitle {
+        text-align: start;
+    }
+
+    /* -------------team-section-------------- */
+
     .team-section {
         padding-top: 96px;
         padding-bottom: 104px;
@@ -67,7 +132,7 @@
     .footer-form {
         justify-content: inherit;
         margin-bottom: 0px;
-        min-width: 264px;
+        max-width: 264px;
     }
 
     .footer-label {
