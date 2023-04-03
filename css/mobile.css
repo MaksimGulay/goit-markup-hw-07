@@ -3,4 +3,9 @@
         max-width: 428px;
     }
 
+    .modal {
+        width: 392px;
+        height: 584px;
+    }
+
 }

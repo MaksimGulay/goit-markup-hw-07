@@ -228,20 +228,32 @@ img {
 
 .tell {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 1.1%;
     letter-spacing: normal;
     color: #4D5AE5;
 }
 
+.social-list {
+    display: flex;
+    gap: 26px;
+}
+
+@media screen and (min-width: 428px) {
+    .tell {
+        font-size: 36px;
+    }
+
+    .social-list {
+        gap: 56px;
+    }
+}
+
+
 .header-link.active {
     color: var(--main-buttons-focuse-color);
 }
 
-.social-list {
-    display: flex;
-    gap: 56px;
-}
 
 .social-item {
     width: 40px;
@@ -251,15 +263,27 @@ img {
 /* --------------hero-section---------- */
 .hero-section {
     background-color: #2E2F42;
-    max-width: 1440px;
+    max-width: 100%;
+    height: 100%;
     margin: 0% auto;
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
+        url(../images/dark-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     display: block;
+    background-size: cover;
+}
+
+@media (min-device-pixel-retio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/dark-bg-mobile2x.jpg);
+    }
 }
 
 .hero-title {
@@ -964,8 +988,8 @@ img {
 
 .modal {
     position: absolute;
-    width: 408px;
-    height: 584px;
+    width: 290px;
+    height: 625px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -975,6 +999,13 @@ img {
     transform: translate(-50%, -50%);
     padding: 24px;
     margin: 0 auto;
+}
+
+@media screen and (min-width:380px) {
+    .modal {
+        width: 392px;
+        height: 584px;
+    }
 }
 
 .modal-close {
@@ -1105,8 +1136,10 @@ img {
 }
 
 .btn-modal {
-    display: block;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
     margin-bottom: 24px;
     left: 119px;
     background: var(--main-butons-color);
@@ -1142,12 +1175,20 @@ img {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
     margin-top: 16px;
     margin-bottom: 24px;
+}
+
+.form-checkbox-icon {
+    margin: 2px;
+}
+
+.polocy-title {
+    margin: 0;
 }
 
 .privacy-link {

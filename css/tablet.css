@@ -14,6 +14,7 @@
         height: unset;
         padding: unset;
         transform: unset;
+        z-index: unset;
     }
 
 
@@ -111,6 +112,19 @@
     .hero-section {
         padding-top: 112px;
         padding-bottom: 108px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/dark-bg-tablet.jpg);
+    }
+
+    @media (min-device-pixel-retio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpi) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/dark-bg-tablet2x.jpg);
+        }
     }
 
     /* -------------Section about----------- */
@@ -161,6 +175,21 @@
 
     .customers-item {
         width: 168px;
+    }
+
+    .modal {
+        position: absolute;
+        width: 408px;
+        height: 584px;
+        background: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 24px;
+        margin: 0 auto;
     }
 
 }
