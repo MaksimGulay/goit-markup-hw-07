@@ -13,7 +13,10 @@
         max-width: unset;
         height: unset;
         padding: unset;
+        transform: unset;
     }
+
+
 
     .heder-phone-menu .modal-close {
         display: none;

@@ -122,14 +122,30 @@ img {
 /* -----------phone-menu----------- */
 
 .heder-phone-menu {
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
+    width: 100%;
+    height: 100vh;
     padding: 40px;
+    background-color: #FFFFFF;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
 }
+
+.heder-phone-menu.is-open {
+    transform: translateX(0);
+}
+
+.burger-button {
+    margin-left: auto;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px 0;
+}
+
 
 .list {
     list-style: none;
