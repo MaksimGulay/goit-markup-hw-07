@@ -121,6 +121,7 @@ img {
 
 /* -----------phone-menu----------- */
 
+
 .heder-phone-menu {
     position: fixed;
     right: 0;
@@ -137,7 +138,9 @@ img {
 
 .heder-phone-menu.is-open {
     transform: translateX(0);
+    overflow: auto
 }
+
 
 .burger-button {
     margin-left: auto;
@@ -396,13 +399,13 @@ img {
 
 .about-subtitle {
     display: flex;
-    text-align: center;
-    font-weight: 400;
+    /* text-align: center; */
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-subtitle-color);
     margin: 0px;
-    min-width: 264px;
+    /* min-width: 264px; */
     /* height: 72px; */
 }
 

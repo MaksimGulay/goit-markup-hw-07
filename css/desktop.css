@@ -126,6 +126,10 @@
         margin-right: 120px;
     }
 
+    .footer-subtitle {
+        margin-bottom: unset;
+    }
+
     .footer-social {
         margin-right: 80px;
     }
