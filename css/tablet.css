@@ -9,6 +9,7 @@
     .heder-phone-menu {
         display: flex;
         position: static;
+        flex-direction: row;
         background-color: transparent;
         max-width: unset;
         height: unset;
@@ -64,6 +65,10 @@
         position: absolute;
         bottom: -1px;
         left: 0;
+    }
+
+    .contacts-adress {
+        display: contents;
     }
 
     .adress {

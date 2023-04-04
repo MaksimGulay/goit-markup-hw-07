@@ -124,6 +124,8 @@ img {
 
 .heder-phone-menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     right: 0;
     top: 0;
     width: 100%;
@@ -138,9 +140,7 @@ img {
 
 .heder-phone-menu.is-open {
     transform: translateX(0);
-    overflow: auto
 }
-
 
 .burger-button {
     margin-left: auto;
@@ -149,14 +149,9 @@ img {
     padding: 15px 0;
 }
 
-
 .list {
     list-style: none;
     text-decoration: none;
-}
-
-.header-list {
-    margin-bottom: 284px;
 }
 
 .header-link {
@@ -203,6 +198,10 @@ img {
 .header-navigation {
     display: flex;
     /* margin-left: auto; */
+}
+
+.contacts-adress {
+    margin-top: auto;
 }
 
 .adress {
