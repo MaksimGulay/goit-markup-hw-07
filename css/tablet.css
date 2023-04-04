@@ -98,6 +98,7 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 1.3%;
+        letter-spacing: 0.04em;
     }
 
     .tell {
@@ -105,6 +106,7 @@
         font-size: 12px;
         line-height: 1.3%;
         color: #434455;
+        letter-spacing: 0.04em;
     }
 
     /*-------------- hero-title------------- */
