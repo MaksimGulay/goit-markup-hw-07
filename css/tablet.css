@@ -241,4 +241,17 @@
     .footer-label {
         justify-content: flex-start;
     }
+
+    /* --------portfolio-section---------- */
+
+    .main-buttons {
+        justify-content: center;
+    }
+
+    .presentation-item {
+        width: calc((100% - 48px) / 2);
+    }
+
+
+
 }

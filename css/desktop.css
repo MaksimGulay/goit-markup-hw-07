@@ -163,4 +163,16 @@
     .footer-btn {
         margin-top: 40px;
     }
+
+
+        /* --------portfolio-section---------- */
+
+        .main-buttons {
+            justify-content: center;
+        }
+    
+        .presentation-item {
+            width: calc((100% - 48px) / 3);
+        }
+    
 }
