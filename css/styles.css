@@ -45,7 +45,6 @@ img {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-    /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 480px) {
@@ -65,8 +64,6 @@ img {
         max-width: 1160px;
     }
 }
-
-
 
 .subtitle {
     font-size: 16px;
